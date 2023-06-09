@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Contactos.css">
+    <title>Redragon Store</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://redragon.es/content/themes/meat-theme/dist/images/favicons/favicon-32x32.png">
+</head>
+<body>
+        <div class="container">
+            <header>
+            <div class="overlay">
+                <img src="https://redragon.es/content/uploads/2021/04/210312-redargon-web-header-somos-redragon.jpg" alt="">
+            </div>
+            <div class="header">
+                <div class="header_logo">
+                    <img src="https://redragon.es/content/uploads/2021/04/logo.svg">
+                </div>            
+                <div class="header_mainmenu">
+                    <ul class="navmenu">
+                        <li>
+                            <a href="Index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Productos</a>        
+                            <ul class="dropmenu">
+                                <li>
+                                    <a href="Teclados.html">Teclados</a>
+                                </li>
+                                <li>
+                                    <a href="Mouses.html">Mouses</a>
+                                </li>
+                                <li>
+                                    <a href="Audifonos.html">Audífonos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text_overlay">
+                <h1>SOMOS REDRAGON</h1>      
+            </div>
+            </header>
+    
+        <div class="mapa">
+            <div class="text">
+                <h1>¿QUIERES CONTACTARNOS?</h1>
+                <p>Puedes ubicarnos en nuestra tienda fisica ubicada en:</p>
+
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.3010140095986!2d-71.62027604877952!3d10.641249840144527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8998532c626369%3A0x68aa14f2acc20bc!2sCentro%20Comercial%20Gran%20Bazar!5e0!3m2!1ses-419!2sve!4v1686234431389!5m2!1ses-419!2sve" width="850" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+            </div>
+        </div>
+        <div class="formulario">
+            <div class="titulos">
+                <h3>¿QUIERES SER DISTRIBUIDOR?</h3>
+                <p>
+                    Si tienes una tienda física o virtual y te interesa comercializar Redragon en tu ciudad o región, te invitamos a que completes el formulario y compartas con nosotros tu propuesta o tus inquietudes.
+
+                    Estaremos felices de ponerte en contacto rápidamente con las personas idóneas de tu zona para que se comuniquen contigo en la brevedad.
+                </p>
+            </div>
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="Emp">Empresa</label>
+                    <input type="text" name="Emp" id="emp" required placeholder="DÍNOS TU EMPRESA">
+                </div>
+                <div class="campo">
+                    <label for="Ubi">Ubicacion</label>
+                    <input type="text" name="Ubi" id="ubi" required placeholder="DÍNOS TU UBICACION">
+                </div>
+                <div class="campo">
+                    <label for="Nom">Nombre</label>
+                    <input type="text" name="Nom" id="nom" required placeholder="DÍNOS TU NOMBRE">
+                </div>
+                <div class="campo">
+                    <label for="Ape">Apellido</label>
+                    <input type="text" name="Ape" id="ape" required placeholder="DÍNOS TU APELLIDO">
+                </div>
+                <div class="campo">
+                    <label for="ema">Correo</label>
+                    <input type="email" name="ema" id="corre" required placeholder="DÍNOS TU CORREO ELECTRONICO">
+                </div>
+                <div class="campo">
+                    <label for="tlfn">Telefono</label>
+                    <input type="text" name="tlfn" id="tele" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required placeholder="DÍNOS TU NUMERO TELEFONICO">
+                </div>
+                <div class="campo">
+                    <label for="msg">Mensaje</label>
+                    <textarea name="msg" id="mensaje" placeholder="ESCRIBE TU MENSAJE AQUI"></textarea>
+                </div>
+                <button type="submit">ENVIAR DATOS</button>
+            </form>
+            
+        </div>        
+    <footer>
+        <p>© Redragon 2023</p>
+    </footer>
+</body>
+
+</html>

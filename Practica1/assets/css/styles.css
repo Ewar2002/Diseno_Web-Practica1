@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: rgb(19, 17, 17);
+}
+.container {
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+.overlay img{
+    max-width: 100%;
+    
+}
+.header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.header_logo{
+    padding-top: 15px;
+    max-width: 100px;
+    margin-left: 3%;
+    margin-right: 55%;
+}
+.header_mainmenu{
+    height: 100%;
+    padding-top: 5px;
+}
+.header_mainmenu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+}
+.header_mainmenu ul li{
+    display: inline-block;
+    align-items: center;
+    height: 100%;
+    margin-left: 15px;
+    border-bottom: solid rgba(0, 0, 0, 0);;
+    position: relative;
+    text-align: center;
+}
+.header_mainmenu ul li a{
+    display: block;
+    padding: 20px 20px;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.header_mainmenu ul li ul.dropmenu li{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.815);
+    margin: 1px 0px;
+}
+
+.header_mainmenu ul li ul.dropmenu{
+    width: auto;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.header_mainmenu ul li:hover {   
+    border-color: aliceblue;
+}
+.header_mainmenu ul li:hover ul.dropmenu{
+    display: block;
+}
+
+.text_overlay{
+    color: aliceblue;
+    margin-top: 24%;
+    margin-left: 3%;
+}
+
+.text_overlay h1{
+    font-size: 40px;
+    line-height: 44px;
+
+}
+.text_overlay h2{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+}
+.text_mas a{
+    position: absolute;
+    margin-left: 3%;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    border: 2px solid aliceblue;
+    transition: all 0.4s ease-in-out;
+}
+.text_mas a:hover{
+    background-color: #E51B27;
+}
+
+.about{
+    background-color: rgb(26, 25, 25);
+    position: relative;
+    margin-top: 8.5%;
+    padding: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: aliceblue;
+
+}
+.about div{
+    display: block;
+    padding-bottom: 5%;
+}
+.about h1{
+    font-size: 55px;
+}
+.about .info1{
+    display: flex;
+}
+.about .info1 .img1 img{
+    margin-top: 3%;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 10px 15px #00000076, 8px 15px 20px #010101a4;
+}
+.about .info1 .text1{
+    margin-left: 4%;
+    text-align: justify;
+}
+.about .info1 .text1 h3{
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+.about .info1 .text1 p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #828282;
+}
+.about .info2{
+    text-align: center;
+    background-image: url(https://redragon.es/content/themes/meat-theme/dist/images/highlightsbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 430px;
+}
+.about .info2 h2{
+    text-align: center;
+    margin-bottom: 2%;
+    padding-top: 3%;
+}
+
+.about .info2 .fondo {
+    position:absolute;
+    padding: 0;
+    padding-right: 30px;
+    margin: 0;
+}
+.about .info2 .fondo img{
+    max-width: 100%;
+}
+
+.about .info2 .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.about .info2 .items .item{
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about .info2 .items .item .icon img{
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.about .info2 .items .item .descripcion{
+    text-align: center;
+}
+.about .info2 .items .item .descripcion p{
+    margin-top: 5%;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.about .info3{
+    display: flex;
+}
+
+.about .info3 .text{
+    margin-right: 4%;
+    text-align: justify;
+}
+
+.about .info3 .text h3{
+    font-style: normal;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.about .info3 .text p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #828282;
+}
+
+.about .info3 .img img{
+    margin-top: 3%;
+    width: 550px;
+    height: 300px;
+    box-shadow: 0 10px 15px #00000076, 8px 15px 20px #010101a4;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 3%;
+    font-size: 24px;
+    text-align: center;
+    z-index: 999;
+}
